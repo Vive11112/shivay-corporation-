@@ -1243,3 +1243,33 @@ HEADER SCROLL EFFECT
     box-shadow:0 10px 30px rgba(0,0,0,.12);
 
 }
+
+.btn-primary-custom {
+    background: #d8a12d;
+    color: #fff;
+    padding: 14px 34px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-primary-custom:hover {
+    background: #0f2d5c;
+    color: #fff;
+}
+
+.btn-outline-primary-custom {
+    border: 2px solid #0f2d5c;
+    color: #0f2d5c;
+    padding: 14px 34px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-outline-primary-custom:hover {
+    background: #0f2d5c;
+    color: #fff;
+}
