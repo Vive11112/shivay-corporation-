@@ -16,6 +16,7 @@ body{
     color:#555;
     background:#fff;
     overflow-x:hidden;
+    padding-top:95px;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
 }
@@ -336,312 +337,104 @@ HEADER
 /*==================================================
 HERO SECTION
 ==================================================*/
-
 .hero{
-
-    position:relative;
-
-    min-height:100vh;
-
-    display:flex;
-
-    align-items:center;
-
-    overflow:hidden;
-
-    background:url('../images/home/hero-banner.jpg') center center/cover no-repeat;
-
-}
-
-.hero::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:linear-gradient(
-        90deg,
-        rgba(11,44,85,.94) 0%,
-        rgba(11,44,85,.88) 40%,
-        rgba(11,44,85,.55) 100%
-    );
-
-    z-index:1;
-
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(11,44,85,.82), rgba(11,44,85,.82)),
+        url("../images/home/hero-banner.jpg") center center/cover no-repeat;
 }
 
 .hero .container{
-
-    position:relative;
-
-    z-index:2;
-
-}
-
-.hero-content{
-
-    max-width:720px;
-
+    position: relative;
+    z-index: 2;
+    padding-top: 01px;
 }
 
 .hero-tag{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    background:rgba(255,255,255,.12);
-
-    color:#fff;
-
-    padding:12px 24px;
-
+    display:inline-block;
+    padding:12px 28px;
     border-radius:50px;
-
-    border:1px solid rgba(255,255,255,.15);
-
-    backdrop-filter:blur(8px);
-
-    margin-bottom:28px;
-
-    font-size:14px;
-
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.18);
+    color:#fff;
     font-weight:500;
-
-}
-
-.hero-tag i{
-
-    color:#D4A437;
-
+    margin-bottom:25px;
 }
 
 .hero-title{
-
+    font-size:60px;
+    font-weight:800;
+    line-height:1.12;
     color:#fff;
-
-    font-size:64px;
-
-    font-weight:700;
-
-    line-height:1.18;
-
     margin-bottom:28px;
-
+    letter-spacing:-1px;
 }
 
 .hero-title span{
-
     color:#D4A437;
-
 }
 
 .hero-description{
-
-    color:rgba(255,255,255,.92);
-
-    font-size:18px;
-
-    line-height:1.9;
-
-    max-width:650px;
-
-    margin-bottom:45px;
-
+    color:rgba(255,255,255,.9);
+    font-size:20px;
+    line-height:1.7;
+    max-width:680px;
+    margin-bottom:36px;
 }
 
 .hero-buttons{
-
     display:flex;
-
-    align-items:center;
-
-    gap:18px;
-
+    gap:20px;
     flex-wrap:wrap;
-
-}
-
-.hero-buttons .btn-primary-custom{
-
-    box-shadow:0 15px 35px rgba(212,164,55,.35);
-
-}
-
-.hero-buttons .btn-outline-custom{
-
-    margin-left:0;
-
-}
-
-.hero-buttons .btn-outline-custom:hover{
-
-    box-shadow:0 15px 35px rgba(255,255,255,.12);
-
 }
 
 .hero-scroll{
-
     position:absolute;
-
-    left:50%;
-
     bottom:35px;
-
+    left:50%;
     transform:translateX(-50%);
-
-    z-index:5;
-
     color:#fff;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:10px;
-
-    animation:scrollMove 2s infinite;
-
-}
-
-.hero-scroll span{
-
-    font-size:13px;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
+    text-align:center;
+    z-index:2;
 }
 
 .hero-scroll i{
+    display:block;
+    margin-top:6px;
+    font-size:22px;
+}
+/*==================================================
+PAGE BANNER
+==================================================*/
 
-    font-size:24px;
-
+.page-banner{
+    background:#fff;
+    padding:55px 0 30px;
+    text-align:center;
 }
 
-@keyframes scrollMove{
-
-    0%{
-
-        transform:translate(-50%,0);
-
-    }
-
-    50%{
-
-        transform:translate(-50%,12px);
-
-    }
-
-    100%{
-
-        transform:translate(-50%,0);
-
-    }
-
-}
-
-/*==========================================
-Hero Stats
-==========================================*/
-
-.hero-stats{
-
-    display:flex;
-
-    gap:35px;
-
-    margin-top:55px;
-
-    flex-wrap:wrap;
-
-}
-
-.hero-stat{
-
-    color:#fff;
-
-}
-
-.hero-stat h3{
-
-    font-size:34px;
-
+.page-banner h1{
+    font-size:56px;
     font-weight:700;
-
-    color:#D4A437;
-
-    margin-bottom:8px;
-
+    color:#0B2C55;
+    margin-bottom:18px;
 }
 
-.hero-stat p{
-
-    margin:0;
-
-    color:rgba(255,255,255,.82);
-
-    font-size:15px;
-
+.page-banner p{
+    max-width:760px;
+    margin:0 auto;
+    font-size:18px;
+    color:#666;
+    line-height:1.8;
 }
 
-/*==========================================
-Hero Image (Optional)
-==========================================*/
-
-.hero-image{
-
-    position:relative;
-
-    z-index:2;
-
-}
-
-.hero-image img{
-
-    width:100%;
-
-    border-radius:22px;
-
-    box-shadow:0 30px 70px rgba(0,0,0,.28);
-
-}
-
-/*==========================================
-Hero Animation
-==========================================*/
-
-.hero-content{
-
-    animation:fadeUp 1s ease;
-
-}
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
+/* Space between banner and first section */
+.page-banner + .section-padding{
+    padding-top:60px;
 }
 /*==================================================
 COMPANY INTRO
@@ -2396,34 +2189,36 @@ HOME / CONTACT FOOTER
 .footer-email{
     display:inline-flex;
     align-items:center;
-    gap:12px;
-    padding:14px 24px;
-    border-radius:50px;
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.10);
-    transition:.3s;
+    gap:10px;
+    padding:0;
+    background:none;
+    border:none;
+    border-radius:0;
 }
 
 .footer-email i{
     color:#d4a437;
-    font-size:18px;
+    font-size:20px;
 }
 
 .footer-email a{
-    color:#fff;
+    color:#ffffff;
     text-decoration:none;
-    font-size:16px;
+    font-size:17px;
     font-weight:500;
 }
 
 .footer-email:hover{
-    background:#d4a437;
-    border-color:#d4a437;
+    background:none;
+    border:none;
 }
 
-.footer-email:hover i,
+.footer-email:hover i{
+    color:#d4a437;
+}
+
 .footer-email:hover a{
-    color:#fff;
+    color:#d4a437;
 }
 
 .footer-address{
